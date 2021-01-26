@@ -1,0 +1,264 @@
+audio{
+    display: none;
+}
+.Results{
+    position: fixed;
+    width: 100vw;
+}
+li{
+    list-style: none;
+    text-align: left;
+    margin-bottom: 15px;
+}
+.Controls{
+    height: 20vh;
+    background-color:rgb(0, 0, 0);   
+    color: rgb(192,192,192);
+    border-left: solid;
+    border-right: solid;
+    /* border-bottom: solid; */
+    border-color: rgb(90,56,56);
+    border-radius: 2%;
+    border-width: 1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.Controls h1{
+    font-size: 4vw;
+    padding: 10px;
+}
+
+.Controls li{
+    margin-bottom: 0px;
+    padding-left:  10px;
+    padding-right: 20px;
+    font-size: 15px;
+}
+.Controls p{
+    margin-top: 18px;
+    font-size: 15px;
+
+}
+.Buttons{
+    position: absolute;
+    top: 14vh;
+    width: 100%;
+    display: flex;
+}
+.Buttons li{
+    font-weight: 900;
+    font-size: 30px;
+}
+.Controls section{
+    position: absolute;
+    top: 0vh;
+    display: flex;
+    z-index: 100;
+}
+.Controls img{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#Pause_Btn, #Play_Btn, #Next_Btn, #Prev_Btn{
+    width: 40px;
+    height: 40px;
+    margin-left: 0px;
+    margin-right: 10px;
+    z-index: 100;
+}
+
+#Pause_Btn, #Play_Btn, #Next_Btn, #Prev_Btn, #Shuffle_Btn, #No_Shuffle_Btn{
+    cursor: pointer;
+}
+
+#Shuffle_Btn, #No_Shuffle_Btn{
+    position: absolute;
+    top: 0vh;
+    left: 84vw;
+    width: 40px;
+    height: 40px;
+    z-index: 100;
+}
+.List{
+    position: absolute;
+    height: calc(75vh);
+    width: 100%;
+    overflow-y: auto;
+}
+
+.Item{
+    display: flex;
+    margin: 5px;
+    background-color:rgb(0,0,0);    
+    color: rgb(192,192,192);
+    border-top: solid;
+    border-width: 1px;
+    border-radius: 2%;
+    border-color: rgb(90,56,56);
+    cursor: pointer;
+}
+.Item img{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.Item li{
+    margin-top: 5px;
+    padding-left: 10px;
+}
+.Item p{
+    padding-left: 10px;
+}
+
+/***************************keyboard rules**********************/
+
+@media screen and (max-height: 550px) {
+    .Controls {
+        height: calc(60vh);
+    }
+
+    .Controls h1{
+        font-size: 25px !important;
+    }
+
+    .Buttons{
+        top: 45vh;
+    }
+   .List{
+        display: none;
+
+    }
+}
+
+@media screen and (min-width: 600px){
+
+    #Pause_Btn, #Play_Btn, #Next_Btn, #Prev_Btn{
+        width: 60px;
+        height: 60px;
+    }
+
+    #Shuffle_Btn, #No_Shuffle_Btn{
+        left: 88vw;
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .Controls img{
+        height: 15vh;
+        width: 30vh;
+    }
+
+    .Controls h1{
+        font-size: 4vw;
+    }
+
+    .Buttons p{
+        font-size: 4vw;
+    }
+
+    .Item li{
+        font-size: 4vw;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+
+    #Pause_Btn, #Play_Btn, #Next_Btn, #Prev_Btn{
+        width: 80px;
+        height: 80px;
+    }
+
+    #Shuffle_Btn, #No_Shuffle_Btn{
+        left: 88vw;
+        width: 80px;
+        height: 80px;
+
+    }
+    .Controls img{
+        height: 15vh;
+        width: 30vh;
+    }
+
+    .Controls h1{
+        font-size: 4vw;
+    }
+    .Item li{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    
+    .Results{
+        display: flex;
+        z-index: 1000;
+    }
+
+    .Controls{
+        position: absolute;
+        height: 90vh;
+        width: 55vw;
+        top: 0vh;
+        left: 0vw;
+        border: none;
+        background-color: rgb(21,21,21);
+    }
+    .Controls img{
+        margin-left: 3vw;
+        height: 70vh;
+        width: 60vw;
+    }
+
+    .Controls h1{
+        font-size: 1.5vw;
+        margin-left: 4.5vw;
+        padding-right: 7vw;
+        text-align: left;
+    }
+
+    .Controls section{
+        display: unset;
+    }
+
+    .Buttons{
+        margin-left: 4vw;
+        top: 80vh;
+        left: -.5vw;
+    }
+    .Buttons p{
+        font-size: 1.5vw;
+        margin-top: 3.5vh;
+        margin-left: 12vw;
+    }
+
+    #Pause_Btn, #Play_Btn, #Next_Btn, #Prev_Btn{
+        width: 80px;
+        height: 80px;
+    }
+
+    #Shuffle_Btn, #No_Shuffle_Btn{
+        left: 56vw;
+        margin-left: -1vw;
+
+    }
+    .List{
+        height: 88vh;
+        width: 45vw;
+        position: absolute;
+        top: 0vh;
+        left: 65vw;
+    }
+    .Item{
+        width: 30vw;
+    }
+    .Item li{
+        font-size: 1vw;
+    }
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+    }
+}
